@@ -47,6 +47,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 
 ## Screenshot
-![React Protfolio]
+![React portfolio]
 
 
