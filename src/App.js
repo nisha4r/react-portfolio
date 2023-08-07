@@ -1,11 +1,14 @@
 import './App.css';
-import PortfolioList from './components/PortfolioList';
+
+
 
 function App() {
   return (
-    <div className="portfolio-app">
-      <PortfolioList />
-    </div>
+    <>
+      <title>Nishanthi's Portfolio </title>
+      <main><div className="portfolio-app"></div>
+      </main>
+    </>
   );
 }
 
