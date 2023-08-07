@@ -1908,7 +1908,13 @@ footer h2 {
 .icon-style {
   cursor: pointer;
   list-style: none;
-  font-size: 30px;
+  font-size: 25px;
   color: #105057;
   display: inline-block;
+}
+
+.icon-style:hover {
+  color: #34958b;
+  opacity: 0.5;
+  transition: .5s ease;
 }
