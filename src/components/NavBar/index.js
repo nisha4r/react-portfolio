@@ -4,7 +4,7 @@ function NavBar(props){
 
     return(
         <nav>
-            <ul>
+            <ul className='nav nav-tabs'>
                 <li><a href="#"> About me</a></li>
                 <li><a href="#"> Portfolio</a></li>
                 <li><a href="#"> Contact</a></li>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePic from '../../assets/nisha.jpeg';
 function Aboutme() {
     return (
         <section id="aboutme" className='m-3'>
