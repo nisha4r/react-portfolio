@@ -10,18 +10,7 @@ body {
   background-color: whitesmoke;
 }
 
-.portfolio-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 800px;
-  min-height: 600px;
-  background: black;
-  text-align: center;
-  margin: 32px auto;
-  border-radius: 20px;
-  padding-bottom: 32px;
-}
+
 
 h1 {
   margin: 32px 0;

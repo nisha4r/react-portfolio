@@ -1,11 +1,12 @@
-import './App.css';
+import React, { useState } from 'react';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Aboutme from './components/Aboutme';
 import Profile from './components/Profile';
-import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import React, { useState } from 'react';
+import Portfolio from './components/Portfolio';
+import './App.css';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
         selectTab={selectTab}
         handleTabChange={handleTabChange}></Header>
       <main>
-        <div className="portfolio-app"> {renderTab()}</div>
+       {renderTab()}
       </main>
       <Footer></Footer>
     </>
