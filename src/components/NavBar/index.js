@@ -1,22 +1,31 @@
-import React , { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import Aboutme from '../Aboutme';
+import Profile from '../Profile';
+import Portfolio from '../Portfolio';
 
 function NavBar(props) {
+    const {
+        selectTab,
+        handleTabChange,
+
+    } = props;
 
 
-    const { handleTabChange, selectTab } = props;
-    useEffect(() => {
-        document.title = selectTab.name;
-    }, [selectTab]);
     return (
-        <nav>
-            <ul className='nav nav-tabs'>
-                <li><a href="#aboutme" className={selectTab === 'AboutMe' ? 'nav-link active' : 'nav-link'} onClick={() => handleTabChange('AboutMe')}> About me</a></li>
-                <li><a href="#portfolio" className={selectTab === 'Portfolio' ? 'nav-link active' : 'nav-link'} onClick={() => handleTabChange('Portfolio')}> Portfolio</a></li>
-                <li><a href="#contact" className={selectTab === 'Contact' ? 'nav-link active' : 'nav-link'} onClick={() => handleTabChange('Contact')}> Contact</a></li>
-                <li><a href="#resume" className={selectTab === 'Resume' ? 'nav-link active' : 'nav-link'} onClick={() => handleTabChange('Resume')}> Resume</a></li>
+        <>
+            <nav>
+                <ul className='nav nav-tabs'>
+                    <li><a href="#"> About me</a></li>
+                    <li><a href="#portfolio"
+                        onClick={() => handleTabChange('Portfolio')}
+                        className={selectTab === 'Portfolio' ? 'nav-link active' : 'nav-link'}> Portfolio</a></li>
+                    <li><a href="#"> Contact</a></li>
+                    <li><a href="#"> Resume</a></li>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+
+        </>
     );
 }
 

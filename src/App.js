@@ -2,40 +2,43 @@ import React, { useState } from 'react';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Aboutme from './components/Aboutme';
-import Profile from './components/Profile';
-import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import './App.css';
 
+import { ChakraBaseProvider, extendBaseTheme } from '@chakra-ui/react'
+// `@chakra-ui/theme` is a part of the base install with `@chakra-ui/react`
+import chakraTheme from '@chakra-ui/theme'
+import { Helmet } from "react-helmet";
+const { Button } = chakraTheme.components
 
+const theme = extendBaseTheme({
+  components: {
+    Button,
+  },
+})
 function App() {
+  
   const [selectTab, handleTabChange] = useState("aboutme");
+
   const renderTab = () => {
-    if (selectTab === "AboutMe") {
-      return <Aboutme />;
-    }
-    if (selectTab === "Contact") {
-      return <Contact />;
-    }
     if (selectTab === "Portfolio") {
       return <Portfolio />;
     }
-    if (selectTab === "Resume") {
-      return <Profile />;
-    }
-    return <Aboutme />;
-  };
+  }
+
   return (
     <>
-      <title>Nishanthi's Portfolio </title>
+      <ChakraBaseProvider theme={theme}>
+      <Helmet>
+        <title>Nishanthi's Portfolio Portfolio </title>
+      </Helmet>
+       
       <Header
         selectTab={selectTab}
-        handleTabChange={handleTabChange}></Header>
-      <main>
-       {renderTab()}
-      </main>
+        handleTabChange={handleTabChange}
+      ></Header>
+      <main>{renderTab()}</main>
       <Footer></Footer>
+      </ChakraBaseProvider>
     </>
   );
 }
