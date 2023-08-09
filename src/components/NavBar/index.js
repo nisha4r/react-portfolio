@@ -19,7 +19,9 @@ function NavBar(props) {
                     <li><a href="#portfolio"
                         onClick={() => handleTabChange('Portfolio')}
                         className={selectTab === 'Portfolio' ? 'nav-link active' : 'nav-link'}> Portfolio</a></li>
-                    <li><a href="#"> Contact</a></li>
+                    <li><a href="#"
+                    onClick={() => handleTabChange('Contact')}
+                    className={selectTab === 'Contatct' ? 'nav-link active' : 'nav-link'}> Contact</a></li>
                     <li><a href="#"> Resume</a></li>
 
                 </ul>
