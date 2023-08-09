@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 import { ChakraBaseProvider, extendBaseTheme } from '@chakra-ui/react'
 // `@chakra-ui/theme` is a part of the base install with `@chakra-ui/react`
