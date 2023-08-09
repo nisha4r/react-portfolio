@@ -42,7 +42,7 @@ function App() {
     <>
       <ChakraBaseProvider theme={theme}>
       <Helmet>
-        <title>Nishanthi's Portfolio Portfolio </title>
+        <title>Nishanthi's Portfolio </title>
       </Helmet>
        
       <Header

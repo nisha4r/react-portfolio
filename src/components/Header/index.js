@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../NavBar'
+import { ScaleFade } from '@chakra-ui/react'
 
 function Header(props) {
     const { selecTab, handleTabChange } = props;
@@ -7,7 +8,7 @@ function Header(props) {
         <section>
             <header>
                 <div>
-                    <h1>Nishanthi's Portfolio</h1>
+                <ScaleFade initialScale={0.1} in={true}> <h1>Nishanthi's Portfolio</h1></ScaleFade>
                 </div>
                 <div>
                     <NavBar selecTab={selecTab}
