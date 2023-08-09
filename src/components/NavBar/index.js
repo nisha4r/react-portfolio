@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react';
-import Aboutme from '../Aboutme';
-import Profile from '../Profile';
-import Portfolio from '../Portfolio';
 
 function NavBar(props) {
     const {
@@ -15,14 +12,16 @@ function NavBar(props) {
         <>
             <nav>
                 <ul className='nav nav-tabs'>
-                    <li><a href="#"> About me</a></li>
+                    <li><a href="#aboutme" onClick={() => handleTabChange('Aboutme')}
+                        className={selectTab === 'Aboutme' ? 'nav-link active' : 'nav-link'}> About me</a></li>
                     <li><a href="#portfolio"
                         onClick={() => handleTabChange('Portfolio')}
                         className={selectTab === 'Portfolio' ? 'nav-link active' : 'nav-link'}> Portfolio</a></li>
-                    <li><a href="#"
-                    onClick={() => handleTabChange('Contact')}
-                    className={selectTab === 'Contatct' ? 'nav-link active' : 'nav-link'}> Contact</a></li>
-                    <li><a href="#"> Resume</a></li>
+                    <li><a href="#contact"
+                        onClick={() => handleTabChange('Contact')}
+                        className={selectTab === 'Contact' ? 'nav-link active' : 'nav-link'}> Contact</a></li>
+                    <li><a href="#profile" onClick={() => handleTabChange('Resume')}
+                        className={selectTab === 'Resume' ? 'nav-link active' : 'nav-link'}> Resume</a></li>
 
                 </ul>
             </nav>

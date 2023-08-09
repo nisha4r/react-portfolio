@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, HStack, VStack, Center } from '@chakra-ui/react';
+import {  HStack,  Center } from '@chakra-ui/react';
 import htmlImage from "../../assets/html_css.png";
 import { Image } from '@chakra-ui/react'
 import { SimpleGrid, GridItem, Heading, Divider, Box, Text } from '@chakra-ui/react';
