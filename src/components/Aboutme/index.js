@@ -3,11 +3,7 @@ import ProfilePic from '../../assets/nisha.jpeg';
 import { Image, Container, Box, Divider, Heading, Spacer} from '@chakra-ui/react'
 function Aboutme() {
     return (
-        <Container bgGradient={[
-            'linear(to-tr, teal.300, cyan.400)',
-            'linear(to-t, cyan.200, teal.500)',
-            'linear(to-b, teal.100, cyan.300)',
-        ]}>
+        <Container bgGradient="linear(to-t, green.100, teal.500)">
            
               <Box className='p-3'>
 

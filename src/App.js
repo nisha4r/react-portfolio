@@ -20,37 +20,38 @@ const theme = extendBaseTheme({
 })
 function App() {
   
+  const color="teal";
   const [selectTab, handleTabChange] = useState("aboutme");
 
   const renderTab = () => {
     if (selectTab === "Portfolio") {
-      return <Portfolio />;
+      return <Portfolio color={color} />;
     }
     if (selectTab === "Contact") {
-      return <Contact />;
+      return <Contact color={color}/>;
     }
     if (selectTab === "Aboutme") {
-      return <Aboutme />;
+      return <Aboutme color={color}/>;
     }
 
     if (selectTab === "Resume") {
-      return <Profile/>;
+      return <Profile color={color}/>;
     }
     }
 
   return (
     <>
       <ChakraBaseProvider theme={theme}>
-      <Helmet>
+      <Helmet color={color}>
         <title>Nishanthi's Portfolio </title>
       </Helmet>
        
-      <Header
+      <Header color={color}
         selectTab={selectTab}
         handleTabChange={handleTabChange}
       ></Header>
       <main>{renderTab()}</main>
-      <Footer></Footer>
+      <Footer color={color}></Footer>
       </ChakraBaseProvider>
     </>
   );
