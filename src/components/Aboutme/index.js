@@ -1,29 +1,41 @@
 import React from 'react';
 import ProfilePic from '../../assets/nisha.jpeg';
-import { Image, Container } from '@chakra-ui/react'
+import { Image, Container, Box, Divider, Heading, Spacer} from '@chakra-ui/react'
 function Aboutme() {
     return (
         <Container bgGradient={[
             'linear(to-tr, teal.300, cyan.400)',
             'linear(to-t, cyan.200, teal.500)',
-            'linear(to-b, green.100, cyan.300)',
+            'linear(to-b, teal.100, cyan.300)',
         ]}>
-            <section id="aboutme" className='m-3'>
-                <h1 id="aboutme-text" className='section-title'>About Me</h1>
+           
+              <Box className='p-3'>
 
-                <div className='flex-row'>
+              
                     <div class=''>
                         <div class=''>
-                            <Image src={ProfilePic} alt='Profile Picture' />
+                            <Spacer/>
+                            <Box size={'sm'} alignItems={'center'}>
+                            <Image rounded={'full'}                                
+                                size='160px'
+                                src={ProfilePic} alt='Nishanthi Govindasamy'
+                            />
+                           
+                            </ Box>
                         </div>
                     </div>
-                    <p>Hello, I'm Nishanthi, 33 year old living at Herriman, Utah. I am a Web Developer learning Web development from Coding Bootcamp at UofU 2023 Feb Batch. I'm fueled with a passion for understanding requirements and the ability convert requirements into Web products. I am a "forever student," eager to build on my academic foundations in Web development and IT.</p>
+                    
+                    <Divider borderColor={'red.600'}/>
+                    <Heading id="aboutme-text" >About Me</Heading>
+                    <p>I am a proactive and motivated Fullstack Developer with a keen interest in combining the art of design with the science of programming. My journey into the world of web development started with a fascination for crafting engaging user experiences and evolved into a holistic skill set that spans both client and server-side technologies. Proficient in languages such as HTML, CSS, JavaScript, and frameworks like React, I thrive in creating intuitive and visually appealing front-end interfaces that seamlessly interact with users.</p>
 
-                    <p>I hunger for knowledge and am determined to learn and create the best solution for web development.</p>
+                    <p>On the backend, I am skilled in server management, database design, and API development. My proficiency extends to technologies like Node.js and Express, enabling me to build robust and scalable server systems. I have experience working with both SQL and NoSQL databases, adapting solutions to the specific needs of the project.</p>
 
-                    <p>I believe mindfulness in the workplace is crucial to success—a tenet. I live out my self-interests in yoga, meditation, gardening, and painting. I'm currently working as a homemaker and am always interested in challenges. Reach out to nisha.4r@gmail.com to connect!</p>
-                </div>
-            </section>
+                    <p>My passion for problem-solving drives me to tackle challenges with creativity and efficiency. Through various personal and collaborative projects, I have developed a strong ability to translate concepts into practical, functional, and elegant solutions. I am a firm believer in clean code practices, ensuring maintainability and readability in all my projects.</p>
+
+                    <p>As an intern, I am eager to contribute to a team-oriented environment, learn from experienced professionals, and enhance my skills through real-world application. I am excited to be part of innovative projects that push boundaries and solve meaningful problems. With a growth mindset and a commitment to staying updated with the latest industry trends, I am confident in my ability to adapt and excel in the fast-paced world of Fullstack Development.</p>
+              
+                </Box>
         </Container>
     );
 }
