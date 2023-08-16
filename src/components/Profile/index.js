@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Tooltip, Heading } from '@chakra-ui/react';
+import { Container, Box,  Heading } from '@chakra-ui/react';
 import { DownloadIcon } from '@chakra-ui/icons'
 function Profile() {
     const onButtonClick = () => {

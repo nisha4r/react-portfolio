@@ -4,8 +4,8 @@ import homeroom from "../../assets/homeroom.png";
 import foodImage from "../../assets/food.avif";
 import byeByeFresh from "../../assets/bbfreshlogo.png";
 import { Image } from '@chakra-ui/react'
-import { useInViewport } from 'react-in-viewport'
-import { SimpleGrid, GridItem, Heading, Divider, Box, Text, Container, Stack, Card } from '@chakra-ui/react';
+
+import {  Heading, Divider, Box, Text, Container, Stack, Card } from '@chakra-ui/react';
 function Portfolio({ color }) {
     const ref = useRef(null);
 

@@ -2,7 +2,7 @@
 
 'use client'
 import React from 'react';
-import { FaGithub, FaGithubAlt, FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
 
 import {
   Box,
