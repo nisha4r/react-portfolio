@@ -16,19 +16,19 @@ function Header(props) {
                 </div>
             </header>
         </section>
-        <Container>
+        <Container bg={'green.50'}>
             <Stack pb={{ base: 18, md: 34 }} spacing={{ base: 8, md: 16 }} as={Box} textAlign={"center"}>
                 <Heading lineHeight={'100%'} fontWeight={500}>
                     Hi, My name is Nishanthi<br />
                     <br />
                     <Text as={'span'} color={'teal.500'}>
-                        I'm Software Engineer
+                        I'm a Software Engineer
                     </Text>
 
                 </Heading>
 
             </Stack>
-            <Box px={2} m={2}>
+            <Box px={2}>
                 <Text as={"span"} color={'gray.500'} >Welcome to my portfolio showcasing my journey as a passionate and dedicated Fullstack Developer. With a strong foundation in both front-end and back-end technologies, I have honed my skills through hands-on projects and a commitment to continuous learning. As an aspiring intern, I am excited to contribute my expertise to a dynamic team, collaborate on innovative projects, and further expand my capabilities in the realm of web development.</Text>
             </Box>
         </Container>
