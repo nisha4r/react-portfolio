@@ -31,7 +31,7 @@ function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
-export default function Contact() {
+export default function Contact({color}) {
     const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
@@ -43,8 +43,8 @@ export default function Contact() {
             return;
             // Then we check to see if the message is not valid. If so, we set an error message regarding the message.
         }
-
-        if (!setMessage(message)) {
+        
+        if (!message) {
             setErrorMessage(`Message is required.`);
             return;
         }
@@ -53,6 +53,7 @@ export default function Contact() {
         setUserName("");
         setMessage("");
         setEmail("");
+        setErrorMessage("");
     };
 
     const [email, setEmail] = useState("");

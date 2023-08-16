@@ -1,29 +1,9 @@
-// import React from 'react';
-// import { FaStackOverflow } from "react-icons/fa";
-// import { VscGithub } from "react-icons/vsc";
-// import { AiOutlineLinkedin } from "react-icons/ai";
 
-// function footer() {
-//     return (
-//         <footer>
-//             <h3>Created by Nishanthi ©</h3>
-//             <p>
-//                 <ul>
-//                     <a href='https://github.com/nisha4r'><li className="icon-style"><VscGithub /></li></a>
-//                     <a href='https://www.linkedin.com/in/nishanthig/'> <li className="icon-style"><AiOutlineLinkedin /></li></a>
-//                     <a href='https://stackoverflow.com/users/22355021/nishanthi-g'> <li className="icon-style"><FaStackOverflow /></li></a>
-//                 </ul>
-//             </p>
-//         </footer>
-//     );
-// }
-// export default footer;
 
 'use client'
 import React from 'react';
 import { FaGithub, FaGithubAlt, FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
-import { VscGithub } from "react-icons/vsc";
-import { AiOutlineLinkedin } from "react-icons/ai";
+
 import {
   Box,
   chakra,
@@ -33,17 +13,9 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { ReactNode } from 'react'
 
-const Logo = (props) => {
-  return (
-    <svg height={32} viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg" {...props}>
-     
-     
-    </svg>
-  )
-}
+
+
 
 const SocialButton = ({
   children,
@@ -74,24 +46,12 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
-    <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container
-        as={Stack}
-        maxW={'6xl'}
-        py={4}
-        spacing={4}
-        justify={'center'}
-        align={'center'}>
-        <Logo />
-        
-      </Container>
+   
 
       <Box
         borderTopWidth={1}
         borderStyle={'solid'}
-        borderColor={useColorModeValue('gray.200', 'gray.700')}>
+        borderColor={useColorModeValue('teal.200', 'teal.700')}>
         <Container
           as={Stack}
           maxW={'6xl'}
@@ -114,7 +74,7 @@ export default function Footer() {
           </Stack>
         </Container>
       </Box>
-    </Box>
+    
   )
 }
 
