@@ -51,7 +51,7 @@ export default function Footer() {
       <Box
         borderTopWidth={1}
         borderStyle={'solid'}
-        borderColor={useColorModeValue('teal.200', 'teal.700')}>
+        borderColor={useColorModeValue('teal.200', 'teal.700')} p={4}>
         <Container
           as={Stack}
           maxW={'6xl'}

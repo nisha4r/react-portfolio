@@ -1,9 +1,11 @@
 import React from 'react';
 import ProfilePic from '../../assets/nisha.jpeg';
 import { Image, Container, Box, Divider, Heading, Spacer} from '@chakra-ui/react'
+
 function Aboutme() {
+    
     return (
-        <Container bgGradient="linear(to-t, green.100, teal.500)">
+        <Container layerStyle={'selected'} bgGradient="linear(to-t, green.100, teal.500)">
            
               <Box className='p-3'>
 

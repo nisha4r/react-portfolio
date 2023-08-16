@@ -77,7 +77,7 @@ export default function Contact({color}) {
         }
     };
     return (
-        <Container bg="cyan.100" maxW="full" mt={0} centerContent overflow="hidden">
+        <Container bg="cyan.100" maxW="full" mt={0} centerContent overflow="hidden" >
             <Flex>
                 <Box
                     bg="cyan.500"
