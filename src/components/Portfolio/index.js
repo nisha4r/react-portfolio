@@ -31,10 +31,10 @@ function Portfolio({ color }) {
                                     <Heading> Project 1 - Food Lette</Heading>
                                     <Text>Most of us have been in a similar situation, that horrible time of day when you have to figure out what to eat, and make a decision. No one likes doing it, and so we have come together to try and solve this problem. Java Chips Food Generator is here to help you. This Food Generator takes out all of the complication and helps make your life easier. When you put in your address information, it will ask you three simple questions. Cuisine preference, minimum rating, and acceptiable distance. Based off of that information the generator will create a random order for you and deliver it to you. So you get to try new foods and not have to make a decision.</Text>
                                     <HStack py={2}>
-                                        <Button>Link</Button>
+                                        <a href="https://github.com/carlystahelidavis/java-chips">  <Button>Link</Button> </a>
                                     </HStack>
                                     <HStack spacing={2} pt={4}>
-                                        <Badge>Badge</Badge>
+                                        <Badge ml='1' fontSize='0.8em' colorScheme='green'>PROJECT</Badge>
                                     </HStack>
                                 </CardBody>
                             </Stack>
@@ -48,12 +48,12 @@ function Portfolio({ color }) {
                             <Stack>
                                 <CardBody align="left">
                                     <Heading> Project 2 - Bye Bye Fresh</Heading>
-                                    <Text>Description</Text>
+                                    <Text>Bye Bye Fresh is a website we created where people that have loved Hello Fresh in the past are able to access recipes and see nutritional value. Not only can you access previous recipes but if you do not see a website you have previous loved you can also add it to our database. By creating a login for out site you will be able to save recipes to your account. The whole purpose of this site is for users to be able to choose recipes they would like to cook which will then give a drop down of ingredients in each recipe chosen. From there you can choose the ingredients you do not have in your pantry and we will supply the caloric breakdown of those items.</Text>
                                     <HStack py={2}>
-                                        <Button>Link</Button>
+                                        <a href="https://github.com/JanicaJensen/refactored-octo-succotash"> <Button>Link</Button></a>
                                     </HStack>
                                     <HStack spacing={2} pt={4}>
-                                        <Badge>Badge</Badge>
+                                        <Badge ml='1' fontSize='0.8em' colorScheme='green'>PROJECT</Badge>
                                     </HStack>
                                 </CardBody>
                             </Stack>
@@ -67,37 +67,19 @@ function Portfolio({ color }) {
                             <Stack>
                                 <CardBody align="left">
                                     <Heading> Project 3 - Homeroom</Heading>
-                                    <Text>Description</Text>
+                                    <Text>This website will provide teachers with an easier way to keep track of kids during free periods. They can also see if students are requested by another teacher, comment why they need to be in a certain classroom, and mark if they are still in my class or on the way via a toggle button.</Text>
                                     <HStack py={2}>
-                                        <Button>Link</Button>
+                                        <a href="https://github.com/AWinterCoding/Project_Home_Room"><Button>Link</Button></a>
                                     </HStack>
                                     <HStack spacing={2} pt={4}>
-                                        <Badge>Badge</Badge>
+                                        <Badge ml='1' fontSize='0.8em' colorScheme='green'>PROJECT</Badge>
                                     </HStack>
                                 </CardBody>
                             </Stack>
                         </Card>
                         {/* </Fade> */}
                     </Stack>
-                    <Stack spacing={4} px={4}>
-                        {/* <Fade initialScale={0.5} in={inViewport > 0}  whileHover={{scale:0.8}} > */}
-                        <Card borderRadius='15px' overflow={'hidden'} direction={{ base: "column" }} shadow={'md'} m={3} p={3} width={{ base: 600, md: 800 }} bg={'gray.400'} >
-                            <Image objectFit={'cover'} src={homeroom} alt='HTML CSS' width={{ base: 600, md: 800 }} height={'400px'}></Image>
-                            <Stack>
-                                <CardBody align="left">
-                                    <Heading> HTML & CSS</Heading>
-                                    <Text>Description</Text>
-                                    <HStack py={2}>
-                                        <Button>Link</Button>
-                                    </HStack>
-                                    <HStack spacing={2} pt={4}>
-                                        <Badge>Badge</Badge>
-                                    </HStack>
-                                </CardBody>
-                            </Stack>
-                        </Card>
-                        {/* </Fade> */}
-                    </Stack>
+                    
 
                 </Stack>
             </Container>
