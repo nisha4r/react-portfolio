@@ -11,7 +11,7 @@ function Aboutme() {
                     <div class=''>
                         <div class=''>
                             <Spacer/>
-                            <Box size={'sm'} alignItems={'center'}>
+                            <Box size={'sm'} align="center">
                             <Image rounded={'full'}                                
                                 size='160px'
                                 src={ProfilePic} alt='Nishanthi Govindasamy'
