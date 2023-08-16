@@ -77,10 +77,10 @@ export default function Contact({color}) {
         }
     };
     return (
-        <Container bg="cyan.100" maxW="full" mt={0} centerContent overflow="hidden" >
+        <Container  bgGradient="linear(to-t, green.100, teal.500)" maxW="full" mt={0} centerContent overflow="hidden" >
             <Flex>
                 <Box
-                    bg="cyan.500"
+                    bg="teal.700"
                     color="white"
                     borderRadius="lg"
                     m={{ sm: 4, md: 16, lg: 10 }}
