@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.25e203c3.css",
+    "main.js": "/react-portfolio/static/js/main.44ed4760.js",
+    "static/media/homeroom.png": "/react-portfolio/static/media/homeroom.7b079a74f5a19786263a.png",
+    "static/media/cover.jpeg": "/react-portfolio/static/media/cover.46307eb0d0acfeaa48df.jpeg",
+    "static/media/bbfreshlogo.png": "/react-portfolio/static/media/bbfreshlogo.0591b05073d73671da57.png",
+    "static/media/food.avif": "/react-portfolio/static/media/food.8df0816ee78d537c06aa.avif",
+    "static/media/nisha.jpeg": "/react-portfolio/static/media/nisha.0e63627c2989f067e33d.jpeg",
+    "index.html": "/react-portfolio/index.html",
+    "main.25e203c3.css.map": "/react-portfolio/static/css/main.25e203c3.css.map",
+    "main.44ed4760.js.map": "/react-portfolio/static/js/main.44ed4760.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25e203c3.css",
+    "static/js/main.44ed4760.js"
+  ]
+}
