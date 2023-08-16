@@ -41,12 +41,14 @@ WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
 
+Video Demo: https://drive.google.com/file/d/1KTEEuZt-ngbve7jTZtHNQ3MzCW06qxKo/view
 
 
 ## Deployment URL
 
+https://nisha4r.github.io/react-portfolio/#profile
 
 ## Screenshot
-![React portfolio]
+![React portfolio](./public/Nishanthi's%20Portfolio.gif)
 
 
