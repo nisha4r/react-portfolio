@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import { HStack, Center, CardBody, Badge, Button, SlideFade, Fade, ScaleFade } from '@chakra-ui/react';
+import { HStack, Center, CardBody, Badge, Button } from '@chakra-ui/react';
 import homeroom from "../../assets/homeroom.png";
 import foodImage from "../../assets/food.avif";
 import byeByeFresh from "../../assets/bbfreshlogo.png";
 import { Image } from '@chakra-ui/react'
 
-import {  Heading, Divider, Box, Text, Container, Stack, Card } from '@chakra-ui/react';
+import { Heading, Divider, Box, Text, Container, Stack, Card } from '@chakra-ui/react';
 function Portfolio({ color }) {
     const ref = useRef(null);
 
@@ -18,7 +18,7 @@ function Portfolio({ color }) {
                     <Stack as={Box} textAlign={'center'} spacing={{ base: 8, md: 14 }} pb={{ base: 18, md: 34 }}>
                         <Stack px={4} align={'center'} direction="row">
                             <HStack mx={5}>
-                                <Heading color={'${color}.400'} fontWeight={800}>Project Work</Heading>
+                                <Heading color={'white'} fontWeight={800}>Project Work</Heading>
                             </HStack>
 
                         </Stack>
